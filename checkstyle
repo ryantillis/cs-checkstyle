@@ -45,10 +45,10 @@ fi
 
 echo "** Doing style check..."
 java -classpath $CHECKSTYLE_JAR $CHECKSTYLE_CLASS -c $CONFIG_FILE "$@"
-if [[ $? == 0 ]] ; then
-    echo ">> No errors, you're good :-)"
-else
-    echo ">> Style errors detected :-("
-fi
+#if [[ $? == 0 ]] ; then
+#    echo ">> No errors, you're good :-)"
+#else
+#    echo ">> Style errors detected :-("
+#fi
 echo ""
 
